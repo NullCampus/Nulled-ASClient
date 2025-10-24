@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* ========== GLOBAL STYLES ========== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========== BUTTON STYLES ========== */
+.button-container {
+  display: flex;
+  gap: 30px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.btn-blue {
+  background: #007bff;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+}
+.btn-blue:hover {
+  box-shadow: 0 0 30px rgba(0, 123, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+.btn-yellow {
+  background: #f1c40f;
+  color: #222;
+  box-shadow: 0 0 15px rgba(241, 196, 15, 0.6);
+}
+.btn-yellow:hover {
+  box-shadow: 0 0 30px rgba(241, 196, 15, 0.9);
+  transform: translateY(-2px);
+}
+
+/* ========== INSTRUCTIONS PAGE ========== */
+.instructions-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 20px;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #f1c40f;
+}
+
+details {
+  width: 100%;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+}
+
+details[open] {
+  box-shadow: 0 0 20px rgba(241, 196, 15, 0.4);
+}
+
+summary {
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f1c40f;
+  outline: none;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details p {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+/* Back link on the instructions page */
+.back-btn {
+  margin-top: 40px;
+  color: #007bff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #66b2ff;
+}
